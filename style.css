@@ -1,0 +1,244 @@
+.icon-email {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 4px;
+    background: url('data:image/svg+xml;utf8,<svg fill="%231565c0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8l8 5 8-5v10z"/></svg>') no-repeat center center;
+    background-size: contain;
+}
+.icon-phone {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 4px;
+    background: url('data:image/svg+xml;utf8,<svg fill="%23ff9800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.12.45 2.33.68 3.48.68a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.15.23 2.36.68 3.48a1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>') no-repeat center center;
+    background-size: contain;
+}
+.profile-photo {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.7rem;
+    box-shadow: 0 2px 8px rgba(21,101,192,0.12);
+    border: 3px solid #e3f2fd;
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.member:hover .profile-photo {
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(255,152,0,0.18);
+    border-color: #ff9800;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f8fb 0%, #e3f2fd 100%);
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+header {
+    background: linear-gradient(90deg, #1565c0 60%, #ff9800 100%);
+    color: #fff;
+    padding: 2.5rem 1rem 2rem 1rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 24px rgba(21,101,192,0.12);
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    overflow: hidden;
+}
+.logo {
+    width: 110px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(21,101,192,0.18);
+    background: #fff;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+.logo:hover {
+    transform: scale(1.08) rotate(-5deg);
+}
+.banner {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(255,152,0,0.18);
+    display: block;
+    transition: box-shadow 0.3s;
+}
+.banner:hover {
+    box-shadow: 0 8px 32px rgba(255,152,0,0.28);
+}
+.subtitle {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(21,101,192,0.12);
+}
+section {
+    background: rgba(255,255,255,0.85);
+    margin: 2.5rem auto;
+    padding: 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(21,101,192,0.10);
+    max-width: 750px;
+    backdrop-filter: blur(2px);
+    border: 1px solid #e3f2fd;
+    transition: box-shadow 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+section:hover {
+    box-shadow: 0 8px 32px rgba(21,101,192,0.18);
+    transform: translateY(-4px) scale(1.01);
+}
+h2 {
+    color: #1565c0;
+    margin-top: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(21,101,192,0.10);
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #1565c0 60%, #ff9800 100%);
+    border-radius: 2px;
+    margin: 0.5rem auto 0 auto;
+    opacity: 0.7;
+}
+ul, ol {
+    margin-left: 1.5rem;
+    font-size: 1.08rem;
+    padding: 1rem 1.5rem;
+    background: rgba(227,242,253,0.3);
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(21,101,192,0.05);
+    margin-bottom: 1.5rem;
+}
+ul li, ol li {
+    margin-bottom: 0.7rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.2rem;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(90deg, #1565c0 60%, #ff9800 100%);
+    border-radius: 50%;
+    opacity: 0.7;
+}
+ol li::before {
+    content: counter(item) '.';
+    counter-increment: item;
+    position: absolute;
+    left: 0;
+    color: #1565c0;
+    font-weight: bold;
+}
+ol {
+    counter-reset: item;
+}
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(90deg, #e3f2fd 60%, #fff 100%);
+    color: #1565c0;
+    border-top: 2px solid #bbdefb;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 12px rgba(21,101,192,0.08);
+}
+a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+a:hover {
+    text-decoration: underline;
+    color: #1565c0;
+}
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.member {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(21,101,192,0.08);
+    padding: 1rem 2rem;
+    min-width: 0;
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px solid #e3f2fd;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    font-size: 1.08rem;
+}
+.member:hover {
+    box-shadow: 0 8px 32px rgba(255,152,0,0.18);
+    border-color: #1565c0;
+}
+.game-btn {
+  display: inline-block;
+  margin: 1.2rem auto 0 auto;
+  padding: 0.8rem 2.2rem;
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #e53935 60%, #b71c1c 100%);
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0 4px 16px rgba(21,101,192,0.18);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+.game-btn:hover {
+  background: linear-gradient(90deg, #43a047 60%, #388e3c 100%);
+  box-shadow: 0 8px 32px rgba(255,152,0,0.28);
+  transform: scale(1.06);
+}
+.project-lead {
+  background: linear-gradient(90deg, #ff0000 0%, #00ff00 50%, #0000ff 100%);
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+.project-lead-rgb {
+  border: 3px solid #2979ff;
+  position: relative;
+  z-index: 1;
+}
+.project-lead-pink {
+  border: 3px solid #f50057;
+  position: relative;
+  z-index: 1;
+}
